@@ -1,6 +1,6 @@
-# memcached
+# iipimage-server
 
-Memcached
+iipimage-server
 
 Based on debian:stable.
 
@@ -8,6 +8,11 @@ Based on debian:stable.
 
 Just run `make`.
 
+## Exposed ports
+
+* 9000/tcp - FastCGI
+
 ## Environment variables
 
-* `MEMCACHE_SIZE` - maximal memory size in megabytes (64 by default)
+* `RUN_AS_USER` (`nobody` by default).
+* `RUN_AS_GROUP` (`nogroup` by default).

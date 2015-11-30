@@ -1,9 +1,9 @@
 #!/bin/sh
 set -e
 
-if [ "$1" = 'memcached' ]; then
-    echo "Starting Memcached in foreground."
-    exec /usr/bin/memcached -u memcache -m ${MEMCACHE_SIZE:-64} -l 0.0.0.0 -p 11211
+if [ "$1" = 'iipimage-server' ]; then
+    echo "Starting IIPImage server in foreground."
+    exec gosu ${RUN_AS_USER:-nobody}:${RUN_AS_GROUP:-nogroup} /usr/lib/iipimage-server/iipsrv.fcgi --bind 0.0.0.0:9000
 fi
 
 exec "$@"

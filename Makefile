@@ -1,4 +1,4 @@
 .PHONY: all
 
 all:
-	docker build -t memcached:latest .
+	docker build -t iipimage-server:latest .
