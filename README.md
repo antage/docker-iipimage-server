@@ -15,6 +15,6 @@ Just run `make`.
 ## Environment variables
 
 * `CREATE_USER_UID`
-* `CREATE_GROUP_GID` (and include `RUN_AS_USER`)
+* `CREATE_USER_GID` (and include `RUN_AS_USER` in the group)
 * `RUN_AS_USER` (`nobody` by default).
 * `RUN_AS_GROUP` (`nogroup` by default).
